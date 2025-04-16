@@ -50,6 +50,49 @@
 
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero Carousel Custom Styles */
+  .hero-carousel .control-arrow {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    color: #192038 !important;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8 !important;
+  }
+  
+  .hero-carousel .control-arrow:hover {
+    opacity: 1 !important;
+    background-color: white !important;
+  }
+  
+  .hero-carousel .control-next.control-arrow:before {
+    border-left-color: #192038 !important;
+  }
+  
+  .hero-carousel .control-prev.control-arrow:before {
+    border-right-color: #192038 !important;
+  }
+  
+  /* Custom Product Card Hover Effect */
+  .product-card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .product-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+}
 
   .dark {
     --background: 222.2 84% 4.9%;

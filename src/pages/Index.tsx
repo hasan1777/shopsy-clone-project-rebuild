@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-shopsy-dark dark:text-white">
+    <div className="min-h-screen w-full bg-white dark:bg-shopsy-dark dark:text-white transition-colors duration-300">
       <Navbar />
       <main>
         <HeroBanner />

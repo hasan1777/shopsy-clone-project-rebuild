@@ -88,7 +88,7 @@ const CustomThemeToggle = () => {
               <path transform="matrix(-1, 0.017, -0.017, -1, 24.231, 3.055)" d="M.774,0,.566.559,0,.539.458.933.25,1.492l.485-.361.458.394L1.024.953,1.509.592.943.572Z" />
               <path transform="matrix(-0.777, 0.629, -0.629, -0.777, 23.185, 12.358)" d="M1.341.529.836.472.736,0,.505.46,0,.4.4.729l-.231.46L.605.932l.4.326L.9.786Z" data-name="star" />
               <path transform="matrix(0.438, 0.899, -0.899, 0.438, 23.177, 29.735)" d="M.015,1.065.475.9l.285.365L.766.772l.46-.164L.745.494.751,0,.481.407,0,.293.285.658Z" data-name="star" />
-              <path transform="translate(12.677 0.388) rotate(104)" d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z" data-name="star" />
+              <path transform="transform(12.677 0.388) rotate(104)" d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z" data-name="star" />
               <path transform="matrix(-0.07, 0.998, -0.998, -0.07, 11.066, 15.457)" d="M.873,1.648l.114-.62L1.579.945,1.03.62,1.144,0,.706.464.157.139.438.7,0,1.167l.592-.083Z" data-name="star" />
               <path transform="translate(8.326 28.061) rotate(11)" d="M.593,0,.638.724,0,.982l.7.211.045.724.36-.64.7.211L1.342.935,1.7.294,1.063.552Z" data-name="star" />
               <path transform="translate(5.012 5.962) rotate(172)" d="M.816,0,.5.455,0,.311.323.767l-.312.455.516-.215.323.456L.827.911,1.343.7.839.552Z" data-name="star" />
@@ -98,47 +98,49 @@ const CustomThemeToggle = () => {
         </svg>
       </label>
 
-      <style jsx>{`
-        #toggle:checked + svg #container {
-          fill: #2b4360;
-        }
+      <style>
+        {`
+          #toggle:checked + svg #container {
+            fill: #2b4360;
+          }
 
-        #toggle:checked + svg #button {
-          transform: translate(28px, 2.333px);
-        }
+          #toggle:checked + svg #button {
+            transform: translate(28px, 2.333px);
+          }
 
-        #sun {
-          opacity: 1;
-        }
+          #sun {
+            opacity: 1;
+          }
 
-        #toggle:checked + svg #sun {
-          opacity: 0;
-        }
+          #toggle:checked + svg #sun {
+            opacity: 0;
+          }
 
-        #moon {
-          opacity: 0;
-        }
+          #moon {
+            opacity: 0;
+          }
 
-        #toggle:checked + svg #moon {
-          opacity: 1;
-        }
+          #toggle:checked + svg #moon {
+            opacity: 1;
+          }
 
-        #cloud {
-          opacity: 1;
-        }
+          #cloud {
+            opacity: 1;
+          }
 
-        #toggle:checked + svg #cloud {
-          opacity: 0;
-        }
+          #toggle:checked + svg #cloud {
+            opacity: 0;
+          }
 
-        #stars {
-          opacity: 0;
-        }
+          #stars {
+            opacity: 0;
+          }
 
-        #toggle:checked + svg #stars {
-          opacity: 1;
-        }
-      `}</style>
+          #toggle:checked + svg #stars {
+            opacity: 1;
+          }
+        `}
+      </style>
     </div>
   );
 };

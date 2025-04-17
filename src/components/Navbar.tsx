@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Search, ShoppingCart, Heart, User, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
+import CustomThemeToggle from "./CustomThemeToggle";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,7 +48,7 @@ export function Navbar() {
             </div>
 
             <div className="flex items-center space-x-4">
-              <ThemeToggle />
+              <CustomThemeToggle />
               <Button variant="ghost" size="icon" className="text-shopsy-dark dark:text-white hover:text-shopsy-primary dark:hover:text-shopsy-primary">
                 <Heart className="h-5 w-5" />
               </Button>
@@ -62,8 +62,8 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <ThemeToggle />
+          <div className="md:hidden flex items-center space-x-2">
+            <CustomThemeToggle />
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>

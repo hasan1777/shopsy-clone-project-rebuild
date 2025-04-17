@@ -44,7 +44,7 @@ const CustomThemeToggle = () => {
 
   return (
     <div className="inline-block align-middle">
-      <label id="theme-toggle-button" className="relative inline-block w-[7em] cursor-pointer">
+      <label htmlFor="toggle" id="theme-toggle-button" className="relative inline-block w-[7em] cursor-pointer">
         <input
           type="checkbox"
           id="toggle"
